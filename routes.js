@@ -1,18 +1,12 @@
 const express = require('express'),
 router = express.Router();
 
-//----------------GET---------------------------------------------
-router.get('/hello', (req, res)=>{
-    res.json({message: "Hello BScBest! ", data: [
-        req.params.foo,
-        req.params.bar
-    ]});
-});
+var itemCtrl = require('./item-controller');
 
-//-----------------POST-------------------------------------------
-router.post('/hello',(req, res)=>{
-    res.json({result: 'Zaray send a post...',
-    data: req.body});
-});
+router.get('/hello', itemCtrl.getWorld);
+
+router.get('/hello/:foo/:bar', itemCtrl.getWorldParams);
+
+router.post('/hello', itemCtrl.postWorld);
 
 module.exports = router;
