@@ -1,0 +1,27 @@
+{
+  "name": "iwa2-routingcontrolling",
+  "version": "0.0.1",
+  "description": "Dividing in sections",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaraysalas/iwa2-RoutingControlling.git"
+  },
+  "author": "ZARAY SALAS LOPEZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaraysalas/iwa2-RoutingControlling/issues"
+  },
+  "homepage": "https://github.com/zaraysalas/iwa2-RoutingControlling#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
