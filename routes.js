@@ -19,5 +19,7 @@ var imageCtrl = require('./image-controller');//Functionality in "image-controll
 
 router.post('/images', upload.single('image'), imageCtrl.uploadImage);//Route to create a new image
 router.get('/images', imageCtrl.getImages);
+router.get('/images/:id', imageCtrl.getImage);
+router.delete('/images/:id', imageCtrl.deleteImage);
 
 module.exports = router;
